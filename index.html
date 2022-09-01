@@ -5,9 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <div class="main">
+        <form name="calculadora">
+            <input type="text" class="exibeNumeros" name="text1" disabled>
+            <input type="text" class="limpaNumeros" name="text12" value="C" onclick="location.reload()"><br>
+
+            <input type="button" class="numero" name="btn7" value="7" onclick="displaynum(btn7.value)">
+            <input type="button" class="numero" name="btn8" value="8" onclick="displaynum(btn8.value)">
+            <input type="button" class="numero" name="btn9" value="9" onclick="displaynum(btn9.value)">
+            <input type="button" class="operador" name="btnvdivisao" value="/" onclick="displaynum(btnvdivisao.value)"><br>
+
+            <input type="button" class="numero" name="btn4" value="4" onclick="displaynum(btn4.value)">
+            <input type="button" class="numero" name="btn5" value="5" onclick="displaynum(btn5.value)">
+            <input type="button" class="numero" name="btn6" value="6" onclick="displaynum(btn6.value)">
+            <input type="button" class="operador" name="btnmultiplicacao" value="*" onclick="displaynum(btnmultiplicacao.value)"><br>
+
+            
+            <input type="button" class="numero" name="btn1" value="1" onclick="displaynum(btn1.value)">
+            <input type="button" class="numero" name="btn2" value="2" onclick="displaynum(btn2.value)">
+            <input type="button" class="numero" name="btn3" value="3" onclick="displaynum(btn3.value)">
+            <input type="button" class="operador" name="btnsubtracao" value="-" onclick="displaynum(btnsubtracao.value)"><br>
+            
+            <input type="button" class="numero" name="btn0" value="0" onclick="displaynum(btn0.value)">
+            <input type="button" class="numero" name="btnponto" value="." onclick="displaynum(btnponto.value)">
+            <input type="button" class="numero" name="btnigual" value="=" onclick="text1.value=eval(text1.value)">
+            <input type="button" class="operador" name="btnadicao" value="+" onclick="displaynum(btnadicao.value)"><br>
+
+        </form>
+    </div>
+
 </body>
+
+<script src="main.js"></script>    
+
 </html>

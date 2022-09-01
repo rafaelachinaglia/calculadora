@@ -1,0 +1,75 @@
+body {
+    align-items: center;
+    background-image: url(./imagens/imagemDeFundo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur( 4px );
+    display: flex;
+    height: 100vh;
+    justify-content:center;
+    -webkit-backdrop-filter: blur( 4px );
+    width: 100%;    
+}
+
+
+.main {
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );     
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    display: inline-block;
+    padding: 30px;
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+
+input {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    outline:none;
+    padding: 10px;
+}
+
+.exibeNumeros {
+    background-color: #0a183b;
+    border-radius: 10px;
+    border: none;
+    height: 26px;
+    letter-spacing: 5px;
+    margin-bottom: 12px;
+    text-align: center;
+    width: 210px;
+}
+
+.limpaNumeros {
+    background-color: #0a183b5d;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    height: 26px;
+    margin-bottom: 12px;
+    text-align: center;
+    width: 24px;
+}
+
+.numero {
+    background-color: #0a183b;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 67px;
+    margin: 3px;
+    width: 64px;
+}
+
+.operador {
+    background-color: #be84ac;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 67px;
+    width: 64px;
+}
